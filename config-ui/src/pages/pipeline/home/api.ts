@@ -16,6 +16,11 @@
  *
  */
 
-export * from './types';
-export * from './components';
-export * from './home';
+import { request } from '@/utils';
+
+type GetPipelineParams = {
+  page: number;
+  pageSize: number;
+};
+
+export const getPipelines = (params: GetPipelineParams) => request('/pipelines', { data: params });

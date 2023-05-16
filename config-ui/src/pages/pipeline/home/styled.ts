@@ -16,6 +16,13 @@
  *
  */
 
-export * from './types';
-export * from './components';
-export * from './home';
+import styled from 'styled-components';
+
+export const Wrapper = styled.div`
+  & > .action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+`;

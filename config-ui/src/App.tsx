@@ -28,6 +28,7 @@ import {
   BlueprintHomePage,
   BlueprintDetailPage,
   BlueprintConnectionDetailPage,
+  PipelineHomePage,
 } from '@/pages';
 import { history } from '@/utils';
 
@@ -69,6 +70,7 @@ function App() {
                 <Route exact path="/blueprints" component={() => <BlueprintHomePage />} />
                 <Route exact path="/blueprints/:id" component={() => <BlueprintDetailPage />} />
                 <Route exact path="/blueprints/:bid/:unique" component={() => <BlueprintConnectionDetailPage />} />
+                <Route exact path="/pipelines" component={() => <PipelineHomePage />} />
               </Switch>
             </BaseLayout>
           )}
