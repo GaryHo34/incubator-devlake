@@ -16,10 +16,11 @@
  *
  */
 
-export * from './project';
-export * from './connection';
-export * from './blueprint';
-export * from './pipeline';
-export * from './offline';
-export * from './db-migrate';
-export * from './pipeline';
+import { request } from '@/utils';
+
+type GetPipelineParams = {
+  page: number;
+  pageSize: number;
+};
+
+export const getPipelines = (params: GetPipelineParams) => request('/pipelines', { data: params });

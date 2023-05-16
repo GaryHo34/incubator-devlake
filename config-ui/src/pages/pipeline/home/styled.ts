@@ -16,10 +16,13 @@
  *
  */
 
-export * from './project';
-export * from './connection';
-export * from './blueprint';
-export * from './pipeline';
-export * from './offline';
-export * from './db-migrate';
-export * from './pipeline';
+import styled from 'styled-components';
+
+export const Wrapper = styled.div`
+  & > .action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+`;

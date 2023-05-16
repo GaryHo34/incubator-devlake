@@ -34,6 +34,7 @@ import {
   BlueprintDetailPage,
   BlueprintConnectioAddPage,
   BlueprintConnectionDetailPage,
+  PipelineHomePage,
 } from '@/pages';
 
 function App() {
@@ -94,6 +95,7 @@ function App() {
                 <Route exact path="/blueprints/:id" component={() => <BlueprintDetailPage />} />
                 <Route exact path="/blueprints/:bid/connection-add" component={() => <BlueprintConnectioAddPage />} />
                 <Route exact path="/blueprints/:bid/:unique" component={() => <BlueprintConnectionDetailPage />} />
+                <Route exact path="/pipelines" component={() => <PipelineHomePage />} />
               </Switch>
             </BaseLayout>
           )}
